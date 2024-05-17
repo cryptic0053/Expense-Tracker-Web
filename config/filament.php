@@ -139,11 +139,9 @@ return [
     */
 
     'widgets' => [
-        'namespace' => 'App\\Filament\\Widgets',
-        'path' => app_path('Filament/Widgets'),
+         'namespace' => 'App\\Filament\\Widgets',
+         'path' => app_path('Filament/Widgets'),
         'register' => [
-            // Remove or comment out this line to disable the Filament branding widget
-            // Widgets\FilamentInfoWidget::class,
             App\Filament\Widgets\StatsOverview::class,
             App\Filament\Widgets\RecentActivity::class,
         ],
