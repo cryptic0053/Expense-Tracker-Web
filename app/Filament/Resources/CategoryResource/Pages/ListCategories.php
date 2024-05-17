@@ -16,4 +16,19 @@ class ListCategories extends ListRecords
     // {
     //     return Category::query()->where('user_id', auth()->id());
     // }
+
+	/**
+	 * @return string
+	 */
+	public static function getResource(): string {
+		return self::$resource;
+	}
+
+	/**
+	 * @param string $resource
+	 */
+	public static function setResource(string $resource) {
+		self::$resource = $resource;
+		return;
+	}
 }
