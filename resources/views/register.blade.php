@@ -22,6 +22,6 @@
             </div>
         </form>
 
-        <x-filament::footer />
+        
     </div>
 </div>
