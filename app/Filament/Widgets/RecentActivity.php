@@ -7,6 +7,7 @@ use Filament\Widgets\Widget;
 use Illuminate\Database\Eloquent\Builder;
 use App\Models\Activity;
 use Squire\Models\Currency;
+use Illuminate\Database\Eloquent\Model;
 
 class RecentActivity extends Widget implements Tables\Contracts\HasTable
 {
@@ -46,7 +47,7 @@ class RecentActivity extends Widget implements Tables\Contracts\HasTable
                 ->label('Category'),
             Tables\Columns\TextColumn::make('subject.amount')
                 // ->extraAttributes(['class' => 'text-right'])
-                ->getStateUsing(fn ($record): string => $this->formatAmount($record->subject->amount))
+                ->getStateUsing(fn ($record):string => $this->formatAmount($record->subject->amount))
                 ->label('Amount'),
             Tables\Columns\TextColumn::make('subject.entry_date')
                 ->label('Entry Date')

@@ -9,6 +9,7 @@ use Filament\Pages\Page;
 use Illuminate\Support\Facades\Hash;
 use Squire\Models\Currency;
 use Squire\Models\Country;
+use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Page implements HasForms
 {
