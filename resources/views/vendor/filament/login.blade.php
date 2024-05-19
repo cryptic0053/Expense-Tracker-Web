@@ -4,4 +4,8 @@
     <x-filament::button type="submit" form="authenticate" class="w-full">
         {{ __('filament::login.buttons.submit.label') }}
     </x-filament::button>
+
+    <a href="{{ route('auth.register') }}" class="text-gray-700 dark:text-gray-100 underline"><b>Create an account</b></a>
+
+
 </form>
