@@ -41,6 +41,7 @@
             <div class="max-w-8xl mx-auto sm:px-6 lg:px-8">
                 <div class="mt-6 sm:rounded-lg">
                     <div class="flex justify-center">
+                        <a href="logo.png"></a>
                         <h1 class="dark:text-white" style="font-size:80px; font-style:initial ;color:red">Expense Tracker</h1>
                     </div>
                 </div>

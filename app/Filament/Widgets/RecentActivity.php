@@ -15,7 +15,7 @@ class RecentActivity extends Widget implements Tables\Contracts\HasTable
 
     protected static string $view = 'filament.widgets.recent-activity';
 
-    protected int | string | array $columnSpan = 'full';
+    protected int|string|array $columnSpan = 'full';
 
     protected function formatAmount($value)
     {
