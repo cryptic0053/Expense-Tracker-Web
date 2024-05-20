@@ -66,26 +66,11 @@ return [
 
     'home_url' => '/',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Brand Name
-    |--------------------------------------------------------------------------
-    |
-    | This will be displayed on the login page and in the sidebar's header.
-    |
-    */
+
 
     'brand' => env('APP_NAME'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Auth
-    |--------------------------------------------------------------------------
-    |
-    | This is the configuration that Filament will use to handle authentication
-    | into the admin panel.
-    |
-    */
+
 
     'auth' => [
         'guard' => env('FILAMENT_AUTH_GUARD', 'web'),
@@ -94,15 +79,7 @@ return [
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Pages
-    |--------------------------------------------------------------------------
-    |
-    | This is the namespace and directory that Filament will automatically
-    | register pages from. You may also register pages here.
-    |
-    */
+
 
     'pages' => [
         'namespace' => 'App\\Filament\\Pages',
@@ -112,15 +89,7 @@ return [
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Resources
-    |--------------------------------------------------------------------------
-    |
-    | This is the namespace and directory that Filament will automatically
-    | register resources from. You may also register resources here.
-    |
-    */
+
 
     'resources' => [
         'namespace' => 'App\\Filament\\Resources',
@@ -128,15 +97,7 @@ return [
         'register' => [],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Widgets
-    |--------------------------------------------------------------------------
-    |
-    | This is the namespace and directory that Filament will automatically
-    | register dashboard widgets from. You may also register widgets here.
-    |
-    */
+
 
     'widgets' => [
          'namespace' => 'App\\Filament\\Widgets',
@@ -148,44 +109,17 @@ return [
     ],
 
 
-    /*
-    |--------------------------------------------------------------------------
-    | Livewire
-    |--------------------------------------------------------------------------
-    |
-    | This is the namespace and directory that Filament will automatically
-    | register Livewire components inside.
-    |
-    */
 
     'livewire' => [
         'namespace' => 'App\\Filament',
         'path' => app_path('Filament'),
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Dark mode
-    |--------------------------------------------------------------------------
-    |
-    | By enabling this feature, your users are able to select between a light
-    | and dark appearance for the admin panel, or let their system decide.
-    |
-    */
+
 
     'dark_mode' => true,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Layout
-    |--------------------------------------------------------------------------
-    |
-    | This is the configuration for the general layout of the admin panel.
-    |
-    | You may configure the max content width from `xl` to `7xl`, or `full`
-    | for no max width.
-    |
-    */
+
 
     'layout' => [
         'forms' => [
@@ -211,50 +145,16 @@ return [
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Favicon
-    |--------------------------------------------------------------------------
-    |
-    | This is the path to the favicon used for pages in the admin panel.
-    |
-    */
 
     'favicon' => null,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Avatar Provider
-    |--------------------------------------------------------------------------
-    |
-    | This is the service that will be used to retrieve default avatars if one
-    | has not been uploaded.
-    |
-    */
+
 
     'default_avatar_provider' => \Filament\AvatarProviders\UiAvatarsProvider::class,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Default Filesystem Disk
-    |--------------------------------------------------------------------------
-    |
-    | This is the storage disk Filament will use to put media. You may use any
-    | of the disks defined in the `config/filesystems.php`.
-    |
-    */
 
     'default_filesystem_disk' => env('FILAMENT_FILESYSTEM_DRIVER', 'public'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Middleware
-    |--------------------------------------------------------------------------
-    |
-    | You may customise the middleware stack that Filament uses to handle
-    | requests.
-    |
-    */
 
     'middleware' => [
         'auth' => [

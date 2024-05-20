@@ -11,12 +11,6 @@ class ListCategories extends ListRecords
 {
     protected static string $resource = CategoryResource::class;
 
-    // Not Required
-    // protected function getTableQuery(): Builder
-    // {
-    //     return Category::query()->where('user_id', auth()->id());
-    // }
-
 	/**
 	 * @return string
 	 */
